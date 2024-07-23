@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venues</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        <venue-list></venue-list>
+        <venue-list :venues="{{ json_encode($venues) }}"></venue-list>
     </div>
-    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

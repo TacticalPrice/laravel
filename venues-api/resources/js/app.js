@@ -1,8 +1,6 @@
-require('./bootstrap');
-
 import { createApp } from 'vue';
-import Venue_list from './components/venue_list.vue';
+import VenueList from './components/VenueList.vue';
 
 const app = createApp({});
-app.component('venue-list', Venue_list);
+app.component('venue-list', VenueList);
 app.mount('#app');

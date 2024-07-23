@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VenueController;
 
-Route::get('/venues', function () {
-    return view('venues');
-});
-
+Route::get('/venues', [VenueController::class, 'index']);
